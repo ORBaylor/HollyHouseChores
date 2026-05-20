@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/HollyHouseChores/static/css/main.f855e6bc.css",
+    "main.js": "/HollyHouseChores/static/js/main.8d3f57b4.js",
+    "static/js/453.f147ed3d.chunk.js": "/HollyHouseChores/static/js/453.f147ed3d.chunk.js",
+    "static/media/logo.svg": "/HollyHouseChores/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/HollyHouseChores/index.html",
+    "main.f855e6bc.css.map": "/HollyHouseChores/static/css/main.f855e6bc.css.map",
+    "main.8d3f57b4.js.map": "/HollyHouseChores/static/js/main.8d3f57b4.js.map",
+    "453.f147ed3d.chunk.js.map": "/HollyHouseChores/static/js/453.f147ed3d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.8d3f57b4.js"
+  ]
+}
