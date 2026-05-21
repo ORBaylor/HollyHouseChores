@@ -391,7 +391,35 @@ function KitchenSchedule({ week }) {
       <div style={styles.kitchenGrid}>
         {DAYS.map((day, i) => {
           const isUp = UP_DAYS.includes(i);
-          const who = `Person ${isUp ? d.kUp : d.kDn}`;
+          let who = "";// ` ${isUp ? (d.kUp == "A" ? "Brandon" : "Omar") : ((d.kDn == "D"  "Ariel" : "Miranda")}`;
+          if (isUp) {
+            switch (d.kUp) {
+              case "A":
+                who = "Ariel"
+                break;
+              case "B":
+                who = "Miranda"
+                break;
+
+            }
+          }
+          else {
+            switch (d.kDn) {
+              case "C":
+                who = "Brandon"
+                break;
+              case "D":
+                who = "Omar"
+                break;
+
+            }
+          }
+
+          if (day == "Sun") {
+            who = "Omar";
+          }
+
+
           const bg = isUp ? "#eef6fb" : "#fdf4e7";
           const tc = isUp ? "#2a6d99" : "#8a5a10";
           return (
