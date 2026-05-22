@@ -414,7 +414,6 @@ function KitchenSchedule({ week }) {
 
             }
           }
-
           if (day == "Sun") {
             who = "Omar";
           }
@@ -435,8 +434,14 @@ function KitchenSchedule({ week }) {
   );
 }
 
+function getCurrentChartWeek() {
+  const day = new Date().getDate();
+  const weekOfMonth = Math.ceil(day / 7);
+  return weekOfMonth % 2 === 0 ? 2 : 1;
+}
+
 export default function CleaningChart() {
-  const [week, setWeek] = useState(1);
+  const [week, setWeek] = useState(getCurrentChartWeek);
   const d = WEEKS[week];
 
   return (
